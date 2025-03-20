@@ -127,17 +127,19 @@ text-transform: uppercase;
     justify-content: space-between;
     height: var(--player-height);
     background-color: #282828;
+    min-width: 440px;
 }
 
 .player-left {
     padding-left: 10px;
     display: flex;
 align-items: center;
-max-width: 130px;
-
+min-width: 155px;
+gap:.5rem;
 }
 
-.brano {
+.brano {padding-right:5px;
+    
 }
 
 .artista {
@@ -164,30 +166,75 @@ min-width: 190px;
 
 .player-controls { 
     display: flex;
-    justify-content: space-between;
+    gap:2rem;
+    justify-content: center;
     flex-direction: row;
+    align-items: center;
 }
 
 .circledplay {
-    border: 3px solid white;
-    border-radius: 50%;
+    font-size: 1.9rem;
+ 
 }
 .time-bar {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    align-items: center;
+    font-size: .8rem;
 }
 
-.player-right {
-    padding-left: 10px;
+.totaltime-bar {
+    width:180px;
+    height:5px;
+    border-radius: 5px;
+    margin: 12px;
+    background-color: grey;
+}
+.actualtime-bar {
+    width:20%;
+    height:5px;
+    border-radius: 5px;
+    background-color: lightgrey;
+}
+
+.player-right { color: white;
+    padding-right: 10px;
+    gap:.5rem;
     display: flex;
 align-items: center;
 
 }
+
+.streaming-controls {display: flex;
+    gap:1rem;
+}
+
 .display-none {
     display: none;
 } 
 
+.volume-bar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.totalvolume-bar {
+    width:90px;
+    height:5px;
+    border-radius: 5px;
+    margin: 12px;
+    background-color: grey;
+}
+.actualvolume-bar {
+    width:20%;
+    height:5px;
+    border-radius: 5px;
+    background-color: lightgrey;
+}
 
 @media screen  and (min-width: 640px){
     :root {
@@ -212,5 +259,18 @@ align-items: center;
 
     img[alt="big-logo"] {
         width:140px;
+    }
+}
+
+@media screen  and (min-width: 1000px){
+    .totaltime-bar {
+        width:400px;
+    }
+
+}
+
+@media screen  and (min-width: 1440px){
+    .totaltime-bar {
+        width:600px;
     }
 }
