@@ -22,9 +22,11 @@ a{
 }
 
 ul {
+    padding-inline-start: 0px;
     list-style: none;
 }
 
+li{display: inline;}
 
 .wrapper {
     width: 100vw;
@@ -66,6 +68,13 @@ justify-content: space-between;}
 #player {
     height: var(--player-height);
     background-color: #282828;
+}
+
+@media screen and (max-width: 600p) {
+    #sidebar li {
+        font-size: 0rem;
+    }
+    
 }
 
 @media screen  and (min-width: 600px){
