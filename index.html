@@ -16,16 +16,16 @@
 
 <body>
     <div class="wrapper">
-        <div id="top-content" class="debug">
-            <div id="sidebar" class="debug">
+        <div id="top-content" class="">
+            <div id="sidebar" class="">
                 <ul class="icons-top">
                     <li>
                         <a href="#">
                             <img class="s-display-none" src="./assets/img/logo-small.svg" alt="logo">
-                            <img class="s-display-inline-block" src="./assets/img/logo.svg" alt="big-logo">
+                            <img class="display-none s-display-inline-block" src="./assets/img/logo.svg" alt="big-logo">
                         </a>
                     </li>
-                    <li><a href="#"><img src="./assets/img/home.svg" alt="home"><span
+                    <li class="active"><a href="#"><img src="./assets/img/home.svg" alt="home"><span
                                 class="display-none s-display-inline-block">Home</span></a></li>
                     <li><a href="#"><img src="./assets/img/search.svg" alt="cerca"><span
                                 class="display-none s-display-inline-block">Cerca</span></a></li>
@@ -52,22 +52,127 @@
                         <div class="download-button"><a href="#"><img src="./assets/img/download.svg" alt="download">
                                 <span class="display-none s-display-inline-block">Installa app</span></a></div>
                     </li>
-                    <li><img src="./assets/img/profile.svg" alt="profilo"><a href="#">Saverio Zanetti</a></li>
+                    <li>
+                        <div class="profile-button"><a href="#"><img src="./assets/img/profile.svg" alt="profile">
+                                <span class="display-none s-display-inline-block">Saverio Zanetti</span></a></div>
+                    </li>
                 </ul>
             </div>
-            <div id="main-content" class="debug">
-                <header id="main-content-header">button</header>
+            <div id="main-content" class="">
+                <header id="main-content-header">
+                    <div class="upgrade">
+                        Effettua l'upgrade
+                    </div>
+                </header>
                 <main>
-                    <!--
+                  
                     <ul class="nav">
-                        <li><a href="#">In evidenza</a></li>
+                        <li class="sectionactive"><a href="#">In evidenza</a></li>
                         <li><a href="#">Podcast</a></li>
                         <li><a href="#">Classifiche</a></li>
                         <li><a href="#">Generi e mood</a></li>
                         <li><a href="#">Nuove uscite</a></li>
                         <li><a href="#">Scopri</a></li>
                     </ul>
-                -->
+            <div class="music">
+                <h3 class="main-title">Recently Played</h3>
+
+                    <ul class="recently">
+<li class="card">
+    <img src="./assets/img/metal_lifting.jpg" alt="cd1">
+    <a href="#">
+        <span class="name">Heavy Metal</span>
+    </a>
+    <a href="#">
+        <span class="author">Subtitle</span>
+    </a>
+</li>
+<li class="card">
+    <img src="./assets/img/stranger.jpeg" alt="cd2">
+    <div class="play"><i class="fa-regular fa-circle-play"></i></div>
+    <a href="#">
+        <span class="name">HTesto lungo lungo lungo lungo lungo lungo</span>
+    </a>
+    <a href="#">
+        <span class="author">Subtitle</span>
+    </a>
+</li>
+<li class="card">
+    <img src="./assets/img/aquietplace.jpeg" alt="cd3">
+    <a href="#">
+        <span class="name">Heavy Metal</span>
+    </a>
+    <a href="#">
+        <span class="author">Subtitle</span>
+    </a>
+</li>
+<li class="card">
+    <img src="./assets/img/split.jpeg" alt="cd4">
+    <a href="#">
+        <span class="name">Heavy Metal</span>
+    </a>
+    <a href="#">
+        <span class="author">Subtitle</span>
+    </a>
+</li>
+<li class="card">
+    <img src="./assets/img/cure.jpeg" alt="cd5">
+    <a href="#">
+        <span class="name">Heavy Metal</span>
+    </a>
+    <a href="#">
+        <span class="author">Subtitle</span>
+    </a>
+</li>
+<li class="card">
+    <img src="./assets/img/sinister.jpeg" alt="cd6">
+    <a href="#">
+        <span class="name">Heavy Metal</span>
+    </a>
+    <a href="#">
+        <span class="author">Subtitle</span>
+    </a>
+</li>
+</ul>
+<h3 class="main-title">Creato per Saverio Zanetti</h3>
+<p class="section-copy">Più ascolti, più accurati saranno i suggerimenti</p>
+
+                    <ul class="suggestions">
+                       
+                        <li class="card">
+                            <img src="./assets/img/radar.jpeg" alt="radar">
+                            <a href="#">
+                                <span class="name">Release Radar</span>
+                            </a>
+                       
+                        </li>
+                        <li class="card">
+                            <img src="./assets/img/mixdaily.jpeg" alt="dailymix">
+                            <a href="#">
+                                <span class="name">Daily Mix 1</span>
+                            </a>
+            
+                        </li>
+                    </ul>
+                    <h3 class="main-title">Artisti più popolari</h3>
+                    <p class="section-copy">Più ascolti, più accurati saranno i suggerimenti</p>
+                    <ul class="mostpopular">
+                        <li class="card">
+                            <img src="./assets/img/youg.jpeg" alt="lana">
+                            <a href="#">
+                                <span class="name">Lana del Rey</span>
+                            </a>
+                       
+                        </li>
+                        <li class="card">
+                            <img src="./assets/img/einaudi.jpeg" alt="einaudi">
+                            <a href="#">
+                                <span class="name">Ludovico Einaudi</span>
+                            </a>
+            
+                        </li>
+                    </ul>
+                </div>
                 </main>
             </div>
 
